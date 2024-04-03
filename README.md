@@ -24,7 +24,7 @@ I want to make a soccer game where users can play against each other to see who 
 
 ### Final Design
 
-![final gui](assets/finalgui.jpg)
+![final gui](assets/gui.jpg)
 
 ## Program Design
 
