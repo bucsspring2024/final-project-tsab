@@ -20,7 +20,7 @@ Tarif Sabur
 
 ### Initial Design
 
-![initial gui](assets/gui.jpg)
+![initial gui](assets/gui.png)
 
 ### Final Design
 
