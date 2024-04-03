@@ -20,7 +20,7 @@ I want to make a soccer game where users can play against each other to see who 
 
 ### Initial Design
 
-![initial gui](assets/gui.png)
+![initial gui](assets/gui.jpg)
 
 ### Final Design
 
