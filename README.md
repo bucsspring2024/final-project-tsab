@@ -12,7 +12,7 @@ Tarif Sabur
 
 ## Project Description
 
-<< Give an overview of your project >>
+I want to make a soccer game where users can play against each other to see who can get to a certain score first 
 
 ***    
 
@@ -30,11 +30,11 @@ Tarif Sabur
 
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. Movable characters
+2. obstacle collisions
+3. game over screen
+4. score bar on screen
+5. end screen with winner
 
 ### Classes
 
