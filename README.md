@@ -2,12 +2,11 @@
 
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# << Project Title >>
-## CS110 Final Project  << Semester, Year >>
+Tsab58
+## CS110 Final Project  Spring 2024
 
 ## Team Members
-
-<< List team member names >>
+Tarif Sabur
 
 ***
 
