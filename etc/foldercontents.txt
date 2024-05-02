@@ -1,1 +1,39 @@
 Any files that are not used in your program besides the README
+Test 1: Test Description: Verify that both players can move up, down, left, and right as expected.
+Test Steps:
+1. Start the game.
+2. Press the W, A, S, D keys to move Player 1.
+3. Press the UP, LEFT, DOWN, RIGHT arrow keys to move Player 2.
+4. See whether they move about the right way
+Expected Outcome: Both players should move in the direction in the direction of the key inputs without exiting the screen boundaries.
+
+Test Case 2: Ball Movement and Collision with Players
+Test Description: Ensure that the ball moves when hit by a player and that collisions between the ball and the players are handled correctly.
+Test Steps:
+1. Start the game.
+2. Move Player 1 to collide with the ball.
+3. Observe the reaction of the ball upon collision.
+Expected Outcome: The ball should change direction and speed based on where it was hit by the player.
+
+Test Case 3: Game Over Condition
+Test Description: See if the game resets when a goal is scored.
+Test Steps:
+1. Start the game.
+2. Move the ball into one of the goals.
+3. See whether it  resets.
+Expected Outcome: The game should reset 
+
+Test Case 4: Menu Navigation
+Test Description: Test the navigation through the game's main menu.
+Test Steps:
+1. Launch the game.
+2. Click space
+Expected outcome: The player should be able to click space to start the game
+
+Test Case 5: Test Case 5: Error Handling and Stability
+Test Description: Verify that the game handles unexpected inputs and situations gracefully.
+Test Steps:
+1.Start the game.
+2. During game click on buttons not specified for any actions
+3. Minimizing and maximizing the game window.
+Expected Outcome: The game should handle all unexpected inputs 
