@@ -162,5 +162,4 @@ class Controller:
     score_rect=score_text.get_rect(center=(400,400))
     self.screen.blit(score_text, score_rect)
     pygame.display.flip()
-    pygame.time.wait(20000)
-    self.running=False
+    exiton
