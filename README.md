@@ -1,20 +1,14 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=14587322&assignment_repo_type=AssignmentRepo)
-
-:warning: Everything between << >> needs to be replaced (remove << >> after replacing)
-
-Tsab58
-## CS110 Final Project  Spring 2024
+Final-Project-tsab  Spring 2024
 
 ## Team Members
 Tarif Sabur
 
-***
 
 ## Project Description
 
 This is a soccer game where two users can play against each other to see who can get more goals within two minutes.  Once the ball is hit once  in the beginning of the game the ball will move around and the users have move around to get the ball to go to the other person's goal.  Each time a user score, the scoreboard updates and the players reset to their respective starting positions; however note that the ball will begin moving from the center once the players reset.  Once the 120 seconds are up whoever scores the most goals wins the game.  Player 1 uses ASWD and plays as the Manblue team while player 2 uses UP DOWN LEFT and RIGHT buttons and plays are Manred team.  The two teams are supposed to represent both real life Premier League teams based in Manchester based off of their respective team colors.
 
-***    
+
 
 ## GUI Design
 
