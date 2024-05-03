@@ -12,7 +12,7 @@ Tarif Sabur
 
 ## Project Description
 
-I want to make a soccer game where users can play against each other to see who can get more goals within two minutes.
+This is a soccer game where two users can play against each other to see who can get more goals within two minutes.  Once the ball is hit once  in the beginning of the game the ball will move around and the users have move around to get the ball to go to the other person's goal.  Each time a user score, the scoreboard updates and the players reset to their respective starting positions; however note that the ball will begin moving from the center once the players reset.  Once the 120 seconds are up whoever scores the most goals wins the game.  Player 1 uses ASWD and plays as the Manblue team while player 2 uses UP DOWN LEFT and RIGHT buttons and plays are Manred team.  The two teams are supposed to represent both real life Premier League teams based in Manchester based off of their respective team colors.
 
 ***    
 
@@ -24,7 +24,8 @@ I want to make a soccer game where users can play against each other to see who 
 
 ### Final Design
 
-![final gui](assets/gui.jpg)
+![final gui](assets/gui.jpg)(assets/player1.jpg)(assets/player2.jpg)(assets/ball.jpg)(assets/goal1.jpg)(assets/goal2.jpg)
+
 
 ## Program Design
 
@@ -34,7 +35,7 @@ I want to make a soccer game where users can play against each other to see who 
 2. obstacle collisions
 3. game over screen
 4. score bar on screen
-5. end screen with winner
+5. end screen with score
 
 ### Classes
 

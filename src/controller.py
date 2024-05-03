@@ -24,10 +24,6 @@ class Controller:
     self.scores={self.player1:0, self.player2:0}
     self.game_time= 120
     self.timeout=0 
-    self.button_color=(0,255,0)
-    self.button_hover_color=(0,0,300)
-    self.button_rect=pygame.Rect(300,500,200,50)
-    self.button_text="Menu"
   def mainloop(self):
     start_ticks=pygame.time.get_ticks()
     while self.running:
@@ -98,9 +94,6 @@ class Controller:
        self.ball.velocity[1]=velocity_magnitude
     else:
       self.ball.velocity[1]= -velocity_magnitude
-    print("Velocity assigned:", self.ball.velocity)
-    self.ball.activate(self.ball.velocity)
-    print("Ball activated")
 
   def update_timer(self):
     if self.clock.tick(60)==60:
@@ -155,42 +148,21 @@ class Controller:
     self.screen.blit(score_surface,(250,760))
     self.screen.blit(timer_surface, (250, 670))
  
-  def draw_button(self, text, rect, color, action=None):
-    mouse=pygame.mouse.get.pos()
-    click=pygame.mouse.get_pressed()
-    if rect.collidepoint(mouse):
-      pygame.draw.rect(self.screen, self.button_hover_color,rect)
-      if click[0]==1 and action is not None:
-        action()
-    else:
-      pygame.draw.rect(self.screen, color, rect)
-    text_surf=pygame.font.Font(None, 36).render(text, True, (255, 255, 255))
-    text_rect= text_surf.get_rect(center=rect.center)
-    self.screen.blit(text_surf, text_rect)
 
   def gameoverloop(self):
-    while self.state=='gameover':
-      for event in pygame.event.get():
-          if event.type== pygame.QUIT: 
-            self.running=False
-            return           
-      self.screen.fill((0,0,0))
-      font=pygame.font.Font(None,72)
-      game_over_text=font.render("Game Over", True, (0,0,255))
-      game_over_rect=game_over_text.get_rect(center=(400,350))
-      self.screen.blit(game_over_text, game_over_rect)
-      score_font=pygame.font.Font(None, 48)
-      score_text = score_font.render(f'Final Score - {self.player_names[self.player1]}: {self.scores[self.player1]} | {self.player_names[self.player2]}: {self.scores[self.player2]}', True, (255, 255, 255))
-      score_rect=score_text.get_rect(center=(400,450))
-      self.screen.blit(score_text, score_rect)
-      self.draw_button(self.button_text, self.button_rect, self.button_color, self.restart_game)
+   for event in pygame.event.get():
+    if event.type== pygame.QUIT:
+        self.running=False
+    self.screen.fill((0,0,0))
+    font=pygame.font.Font(None,72)
+    game_over_text=font.render("Game Over", True, (0,0,255))
+    game_over_rect=game_over_text.get_rect(center=(400,350))
+    self.screen.blit(game_over_text, game_over_rect)
+    score_font=pygame.font.Font(None, 48)
+    score_text = score_font.render(f'Final Score - {self.player_names[self.player1]}: {self.scores[self.player1]} | {self.player_names[self.player2]}: {self.scores[self.player2]}', True, (255, 255, 255))
+    score_rect=score_text.get_rect(center=(400,450))
+    self.screen.blit(score_text, score_rect)
     pygame.display.flip()
-    self.clock.tick(30)
+  
 
-  def restart_game(self):
-    self.player1.rect.topleft=(100,250)
-    self.player2.rect.topleft=(650,250)
-    self.ball.rect.center=(400,300)
-    self.scores= {self.player1: 0, self.player2:0}
-    self.game_time=120
-    self.state='menu'
+  
